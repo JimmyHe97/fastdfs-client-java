@@ -35,6 +35,13 @@ public class StorageClient {
     this.trackerServer = null;
     this.storageServer = null;
   }
+  
+  /**
+   * getTrackerServer for close socket in pool
+   */
+  public TrackerServer getTrackerServer() {
+    return this.trackerServer;
+  }
 
   /**
    * constructor with tracker server and storage server
